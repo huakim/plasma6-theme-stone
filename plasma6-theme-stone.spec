@@ -44,12 +44,17 @@ Summary: %{summary}
 %files
 %{_kf6_plasmadir}/look-and-feel/Stone
 %{_kf6_plasmadir}/desktoptheme/Stone
+%dir %{_kf6_plasmadir}/look-and-feel
+%dir %{_kf6_plasmadir}/desktoptheme
 
 %files -n stone-colorschemes
 %{_datadir}/color-schemes/Stone.colors
+%dir %{_datadir}/color-schemes
 
 %files -n stone-wallpapers
 %{_datadir}/wallpapers/Stone
+%dir %{_datadir}/wallpapers
 
 %files -n konsole-stone-theme
 %{_datadir}/konsole/*
+$dir %{_datadir}/konsole
