@@ -19,7 +19,9 @@ Source: %{name}-%{version}.tar.gz
 
 %install
 mkdir -pv %{buildroot}%{_datadir}
-cp -Rfv plasma %{buildroot}%{_datadir}/
+mkdir -pv %{buildroot}%{_kf6_plasmadir}
+cp -Rfv plasma/look-and-feel %{buildroot}%{_kf6_plasmadir}/
+cp -Rfv plasma/desktoptheme %{buildroot}%{_kf6_plasmadir}/
 cp -Rfv wallpapers %{buildroot}%{_datadir}/
 cp -Rfv color-schemes %{buildroot}%{_datadir}/
 cp -Rfv konsole %{buildroot}%{_datadir}/
@@ -51,4 +53,3 @@ Summary: %{summary}
 
 %files -n konsole-stone-theme
 %{_datadir}/konsole/*
-
