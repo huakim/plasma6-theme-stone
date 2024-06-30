@@ -57,4 +57,4 @@ Summary: %{summary}
 
 %files -n konsole-stone-theme
 %{_datadir}/konsole/*
-$dir %{_datadir}/konsole
+%dir %{_datadir}/konsole
